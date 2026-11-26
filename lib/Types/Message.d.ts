@@ -587,10 +587,21 @@ export type PaymentInviteInfo = {
     type?: number;
     expiry?: number;
 };
+export type SoundStickerAssets = {
+    sticker: Buffer;
+    audio: Buffer;
+};
+
+export type SoundStickerMessage = Buffer | {
+    video: Buffer;
+} | SoundStickerAssets
+
 export type AnyRegularMessageContent = (({
     text: string;
     linkPreview?: WAUrlInfo | null;
 } & Mentionable & Contextable & Buttonable & Templatable & Interactiveable & Shopable & Collectionable & Cardsable & Listable & Editable) | AnyMediaMessageContent | {
+    soundSticker: SoundStickerMessage;
+} | {
     event: EventMessageOptions;
 } | ({
     poll: PollMessageOptions;

@@ -1,7 +1,7 @@
 {
   "name": "@anmalass/baileys",
   "type": "module",
-  "version": "1.0.0-beta.1",
+  "version": "1.1.0",
   "description": "Anmalass Baileys is an enhanced WhatsApp Web API library based on the Baileys ecosystem, featuring advanced messaging, Native Flow, interactive messages, newsletter support, and extended protocol utilities.",
   "keywords": [
     "baileys",
@@ -178,5 +178,16 @@
       "No baileys-mbuilder dependency"
     ],
     "status": "public-preview-candidate-not-security-audited-or-live-tested"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anmalass/Anmalass-Baileys.git"
+  },
+  "homepage": "https://github.com/Anmalass/Anmalass-Baileys#readme",
+  "bugs": {
+    "url": "https://github.com/Anmalass/Anmalass-Baileys/issues"
+  },
+  "engines": {
+    "node": ">=20.0.0"
   }
 }

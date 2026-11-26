@@ -81,6 +81,15 @@ type DownloadMediaMessageContext = {
     reuploadRequest: (msg: WAMessage) => Promise<WAMessage>;
     logger: ILogger;
 };
+export declare const downloadSoundSticker: (
+    message: WAMessage,
+    options: MediaDownloadOptions,
+    ctx?: DownloadMediaMessageContext
+) => Promise<{
+    sticker: Buffer;
+    audio: Buffer;
+    audioMessage: proto.Message.IAudioMessage;
+}>;
 /**
  * Downloads the given message. Throws an error if it's not a media message
  */
